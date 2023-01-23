@@ -17,7 +17,8 @@
     "styled-components": "^5.3.6",
     "the-new-css-reset": "^1.8.3",
     "use-local-storage": "^2.3.6",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

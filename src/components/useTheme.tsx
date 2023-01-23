@@ -59,6 +59,7 @@ export const useTheme = () => {
     <StyledSection>
       {Object.keys(themes).map((theme) => (
         <StyledButton
+          key={theme}
           onClick={() => setTheme(theme as Theme)}
           themeColor={themes[theme as Theme].background}
         >

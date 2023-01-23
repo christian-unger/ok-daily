@@ -20,11 +20,25 @@ const Container = styled.section`
   height: 100%;
 `;
 
+const Header = styled.header`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+`;
+
 const Title = styled.h1`
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 900;
   color: ${(props) => props.theme.color};
-  padding: 1rem;
+`;
+
+const Subtitle = styled.p`
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: ${(props) => props.theme.color};
 `;
 
 export const App = () => {
@@ -38,7 +52,10 @@ export const App = () => {
       <ThemeButtons />
       <Background>
         <Container>
-          <Title>OKDAILY</Title>
+          <Header>
+            <Title>OKDAILY</Title>
+            <Subtitle>a super simple app for super daily habits</Subtitle>
+          </Header>
           <Todos />
         </Container>
       </Background>
