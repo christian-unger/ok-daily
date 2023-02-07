@@ -47,7 +47,7 @@ const themes = {
 type Theme = keyof typeof themes;
 
 export const useTheme = () => {
-  const [theme, setTheme] = useLocalStorage<Theme>("ok-daily-theme", "green");
+  const [theme, setTheme] = useLocalStorage<Theme>("ok-daily-theme", "light");
 
   const ThemeProvider = ({ children }: { children: React.ReactNode }) => (
     <SCThemeProvider theme={themes[theme as keyof typeof themes]}>

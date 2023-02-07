@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Todos } from "./todos";
-import { useWelcomeModal, useTheme } from "./components";
+import { useWelcomeModal, useTheme } from "./hooks";
 import { GlobalStyle } from "./globalStyles";
 import styled from "styled-components";
 
